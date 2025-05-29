@@ -1,6 +1,6 @@
 {
   "name": "pair",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "simple pairing code example",
   "main": "index.js",
   "scripts": {
