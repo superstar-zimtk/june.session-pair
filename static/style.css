@@ -5,7 +5,7 @@ body {
 	align-items: center;
 	height: 100vh;
 	margin: 0;
-	background-image: url("https://files.catbox.moe/rfc3zo.jpg");
+	background-image: url("https://cdn.ironman.my.id/i/2iceb4.jpeg");
 	background-size: cover;
 	background-position: center;
 }
@@ -150,11 +150,11 @@ a span:nth-child(4) {
 
 #output {
 	margin-top: 20px;
-	color: green;
+	color: white;
 }
 
 #phone {
-	color: blue;
+	color: black;
 }
 
 .copy-btn {
@@ -162,7 +162,7 @@ a span:nth-child(4) {
 	padding: 5px 10px;
 	background-color: #28a745;
 	color: white;
-	border: purple;
+	border: none;
 	cursor: pointer;
 	border-radius: 5px;
 }
