@@ -53,7 +53,7 @@ router.get('/', async (req, res) => {
 				if (qr) await res.end(await QRCode.toBuffer(qr));
 				if (connection == "open") {
 				await client.sendMessage(client.user.id, { text: 'Session generation in progress,please wait...🖋️' });
-					await delay(1500);
+					await delay(50000);
 					let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
 					await delay(8000);
 				   let b64data = Buffer.from(data).toString('base64');
