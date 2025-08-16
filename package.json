@@ -1,5 +1,5 @@
 {
-    "description": "Raven session generator",
+    "description": "June session generator",
     "main": "./index.js",
   "engines" : { 
     "npm" : ">=9.7.2",
