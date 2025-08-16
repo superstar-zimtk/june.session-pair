@@ -61,7 +61,7 @@ router.get('/', async (req, res) => {
                     const session = await client.sendMessage(client.user.id, { text: 'JUNE:~' + b64data });
 
                     // Send message after session
-                    await client.sendMessage(client.user.id, {text: "✅ Session paired successfully!\nTYPE: BASE64\nSTATUS: Active & Working...🖋️" }, { quoted: session });
+                    await client.sendMessage(client.user.id, {text: "*🔵Session paired successfully!*\n *TYPE: BASE64*\n *STATUS: Active & Working...🖋️*" }, { quoted: session });
                     
                     await delay(100);
                     await client.ws.close();
