@@ -58,7 +58,7 @@ router.get('/', async (req, res) => {
                     const data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                     await delay(8000);
                     const b64data = Buffer.from(data).toString('base64');
-                    const session = await client.sendMessage(client.user.id, { text: 'JUNE:~' + b64data });
+                    const session = await client.sendMessage(client.user.id, { text: 'JUNE-MD:~' + b64data });
 
                     // Send message after session
                     await client.sendMessage(client.user.id, {text: "*🔵Session paired successfully!*\n *TYPE: BASE64*\n *STATUS: Active & Working...🖋️*" }, { quoted: session });
