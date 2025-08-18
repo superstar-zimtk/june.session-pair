@@ -53,7 +53,7 @@ router.get('/', async (req, res) => {
                 const { connection, lastDisconnect } = s;
                 if (connection === 'open') {
                 await client.sendMessage(client.user.id, { text: `Session generation in progress,Please Wait...🖋️` });
-                    await delay(1500);
+                    await delay(2500);
                     
                     const data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                     await delay(8000);
