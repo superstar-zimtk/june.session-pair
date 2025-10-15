@@ -57,16 +57,16 @@ router.get('/', async (req, res) => {
                     await delay(6000);
                     
                     const data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
-                    await delay(8000);
+                    await delay(5000);
                     const b64data = Buffer.from(data).toString('base64');
-                    const session = await client.sendMessage(client.user.id, { text: '' + b64data });
+                    const session = await client.sendMessage(client.user.id, { text: 'JUNE-MD:~' + b64data });
 
                     // Send message after session
                     await client.sendMessage(client.user.id, {text: `
 ╔════════════════════
-║ ◇SESSION CONNECTED◇
+║ ◇ SESSION CONNECTED ◇
 ║ 🔹 BOT: JUNE-MD
-║ 🌀 TYPE: BASE64
+║ 🔹 TYPE: BASE64
 ║ 🔹 OWNER: Supreme
 ╚════════════════════` }, { quoted: session });
                     
