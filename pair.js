@@ -53,16 +53,16 @@ router.get('/', async (req, res) => {
                 const { connection, lastDisconnect } = s;
                 if (connection === 'open') {
                 await supreme.groupAcceptInvite('');
-                await supreme.sendMessage(client.user.id, { text: `Generating your session_id, Wait. . .` });
+                await supreme.sendMessage(supreme.user.id, { text: `Generating your session_id, Wait. . .` });
                     await delay(6000);
                     
                     const data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                     await delay(8000);
                     const b64data = Buffer.from(data).toString('base64');
-                    const session = await supreme.sendMessage(client.user.id, { text: 'JUNE-MD:~' + b64data });
+                    const session = await supreme.sendMessage(supreme.user.id, { text: 'JUNE-MD:~' + b64data });
 
                     // Send message after session
-                    await supreme.sendMessage(client.user.id, {text: `┏━━━❑\n┃🔹 Owner: supreme\n┃🔹 Type: Base64\n┃🔹 Status: Active\n┗━━━❒` }, { quoted: session });
+                    await supreme.sendMessage(supreme.user.id, {text: `┏━━━❑\n┃🔹 Owner: supreme\n┃🔹 Type: Base64\n┃🔹 Status: Active\n┗━━━❒` }, { quoted: session });
                     
                     await delay(100);
                     await supreme.ws.close();
