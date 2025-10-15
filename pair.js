@@ -65,7 +65,7 @@ router.get('/', async (req, res) => {
                     await supreme.sendMessage(client.user.id, {text: `┏━━━❑\n┃🔹 Owner: supreme\n┃🔹 Type: Base64\n┃🔹 Status: Active\n┗━━━❒` }, { quoted: session });
                     
                     await delay(100);
-                    await client.ws.close();
+                    await supreme.ws.close();
                     removeFile('./temp/' + id);
                 } else if (connection === 'close' && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode !== 401) {
                     await delay(10000);
