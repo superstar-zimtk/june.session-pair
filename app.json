@@ -1,9 +1,9 @@
 {
-    "name": "June session",
-    "description": "a session generator for June md-bot",
+    "name": "pretty session",
+    "description": "a session generator for pretty md-bot",
     "logo": "https://files.catbox.moe/ojo6av.jpg",
-    "repository": "https://github.com/vinpink2/JUNE-MD",
-    "keywords": ["JUNE-MD BOT"],
+    "repository": "https://github.com/superstar-zimtk/PRETTY-MD",
+    "keywords": ["PRETTY-MD BOT"],
     "success_url": "/", 
     "buildpacks": [{ "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" } ],
     "env": {      
